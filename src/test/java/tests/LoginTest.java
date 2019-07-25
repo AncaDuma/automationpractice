@@ -34,11 +34,13 @@ public class LoginTest extends BaseTest {
         WebElement homebutton = driver.findElement(By.xpath("//a[contains(text(),'Home')]"));
         homebutton.click();
 
+
         //validez pagina de home
 
         String expectedres=BaseTest.getvalue("homepage");
         String actualres= driver.getTitle();
         Assert.assertEquals(expectedres,actualres);
+        
 
         //dam click pe sign in button
 
